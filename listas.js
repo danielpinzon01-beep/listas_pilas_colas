@@ -12,3 +12,18 @@ lista.pop(); // Elimina el último elemento de la lista
 lista.shift(); // Elimina el primer elemento de la lista    
 
 console.log(lista); // Imprime la lista actualizada
+
+for (let elemento of lista) {
+    console.log(elemento); // Imprime cada elemento de la lista
+}
+
+let productos = ["tomate", "arroz", "sal"];
+productos.push("azúcar");
+for (let producto of productos) {
+    console.log(producto); // Imprime cada producto de la lista
+}
+
+productos.splice(1, 1);
+console.log(productos); // Imprime la lista de productos actualizada
+
+console.log(productos.length);
